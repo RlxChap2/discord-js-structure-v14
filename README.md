@@ -66,7 +66,7 @@ MONGO_URI=your-mongodb-uri
 ### 4. Run the bot
 
 ```bash
-npm start
+node .
 ```
 
 ---

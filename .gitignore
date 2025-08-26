@@ -39,7 +39,6 @@ dist/
 build/
 
 # Dependency lock files
-package-lock.json
 yarn.lock
 
 # IDEs and editors

@@ -44,7 +44,7 @@ jobs:
               if: ${{ steps.git-check.outputs.changes == 'true' }}
               uses: peter-evans/create-pull-request@v5
               with:
-                  token: ${{ secrets.BOT_TOKEN }}
+                  token: ${{ secrets.GITHUB_TOKEN }}
                   base: main
                   add-paths: |
                       package-lock.json

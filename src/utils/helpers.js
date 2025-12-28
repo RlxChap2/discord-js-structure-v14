@@ -136,7 +136,7 @@ module.exports = {
     /**
      * Handles all types of errors to ensure the stability of the application.
      */
-    isError: function () {
+    isError: function (client) {
         // Handle uncaught exceptions (errors thrown without a try-catch)
         process.on('uncaughtException', (error) => {
             console.error('Uncaught exception in the application: ', error);

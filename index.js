@@ -14,4 +14,4 @@ client.login(process.env.BOT_TOKEN);
 
 // Handling events and commands through the utility functions
 utils.handler(client);
-utils.isError();
+utils.isError(client);

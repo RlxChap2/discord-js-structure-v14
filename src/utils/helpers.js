@@ -6,7 +6,7 @@ const { connect } = require('mongoose');
 
 const EventsTable = new ascii('Events').setJustify();
 const SlashTable = new ascii('SlashCommands').setJustify();
-const rest = new REST({ version: '10' }).setToken(process.env.BOT_TOKEN);
+const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 
 // =======-> Database Connection
 /**

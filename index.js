@@ -10,7 +10,7 @@ const client = new Client({
 });
 
 // Login to Discord using the token from environment variables
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.TOKEN);
 
 // Handling events and commands through the utility functions
 utils.handler(client);

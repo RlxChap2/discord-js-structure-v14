@@ -9,15 +9,14 @@ module.exports = {
      */
     async execute(client) {
         try {
-            const tableInformation = {
+            console.table({
                 name: client.user.tag,
                 id: client.user.id,
                 guilds: client.guilds.cache.size,
                 users: client.users.cache.size,
                 channels: client.channels.cache.size,
                 commands: client.commands.size,
-            };
-            console.table(tableInformation);
+            });
         } catch (error) {
             console.error(error);
         }
